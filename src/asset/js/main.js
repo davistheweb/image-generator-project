@@ -7,13 +7,13 @@ const search = (input, button) => {
     const searchBtn = document.getElementById(button);
 
     searchBtn.addEventListener("click", () => {
-        document.title = searchInput.value;
+        document.title = `Search = ${searchInput.value} `;
         fetchImage();
         fetchImageSearch();
     });
     searchInput.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
-            document.title = searchInput.value;
+            document.title = `Search = ${searchInput.value} `;
             fetchImage();
             fetchImageSearch()
         }
